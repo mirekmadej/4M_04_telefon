@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4M_04_telefon.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Start">
+
+
+            <Label
+                Text="0"
+                x:Name="numerLbl"
+                FontSize="48"
+                HorizontalOptions="End" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition   />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Button
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Text="1"
+                    Clicked="btn1Clicked"
+                    />
+                <Button
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    Text="2"
+                    Clicked="btn2Clicked"
+                    />
+                <Button
+                    Grid.Column="2"
+                    Grid.Row="0"
+                    Text="3"
+                    Clicked="btn3Clicked"
+                    />
+                <Button
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Text="4"
+                    Clicked="btn4Clicked"
+                    />               
+                <Button
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Text="5"
+                    Clicked="btn5Clicked"
+                    />
+                <Button
+                    Grid.Column="2"
+                    Grid.Row="1"
+                    Text="6"
+                    Clicked="btn6Clicked"
+                    />
+                <Button
+                    Grid.Column="0"
+                    Grid.Row="2"
+                    Text="7"
+                    Clicked="btn7Clicked"
+                    />
+                <Button
+                    Grid.Column="1"
+                    Grid.Row="2"
+                    Text="8"
+                    Clicked="btn8Clicked"
+                    />
+                <Button
+                    Grid.Column="2"
+                    Grid.Row="2"
+                    Text="9"
+                    Clicked="btn9Clicked"
+                    />
+                <Button
+                    Grid.Column="0"
+                    Grid.Row="3"
+                    Text="*"
+                    Clicked="btnStarClicked"
+                    />
+                <Button
+                    Grid.Column="1"
+                    Grid.Row="3"
+                    Text="0"
+                    Clicked="btn0Clicked"
+                    />
+                <Button
+                    Grid.Column="2"
+                    Grid.Row="3"
+                    Text="#"
+                    Clicked="btnHashClicked"
+                    />
+                <Button
+                    Grid.Column="0"
+                    Grid.Row="4"
+                    Text="DEL"
+                    Clicked="btnDelClicked"
+                    />
+            </Grid>
+
+            <Button
+                Text="CALL"
+                Clicked="btnCALLClicked"
+                />
+
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
