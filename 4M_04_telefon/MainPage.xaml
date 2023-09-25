@@ -15,24 +15,27 @@
                 x:Name="numerLbl"
                 FontSize="48"
                 HorizontalOptions="End" />
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition   />
-                    <RowDefinition />
-                    <RowDefinition />
-                    <RowDefinition />
-                    <RowDefinition />
+            <Grid Padding="10" RowSpacing="10" ColumnSpacing="10"
+                  HorizontalOptions="Center">
+                <Grid.RowDefinitions >
+                    <RowDefinition    Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="80"/>
                 </Grid.ColumnDefinitions>
 
                 <Button
                     Grid.Column="0"
                     Grid.Row="0"
                     Text="1"
+                    
+                    
                     Clicked="btn1Clicked"
                     />
                 <Button
@@ -105,12 +108,19 @@
                     Grid.Column="0"
                     Grid.Row="4"
                     Text="DEL"
+                    BackgroundColor="lightGray"
+                    TextColor="Black"
+                    FontSize="28"
+                    FontAttributes="Bold"
                     Clicked="btnDelClicked"
+                    CornerRadius="30"
                     />
             </Grid>
 
-            <Button
-                Text="CALL"
+
+            <ImageButton
+                Source="tel.png"
+                WidthRequest="100"
                 Clicked="btnCALLClicked"
                 />
 

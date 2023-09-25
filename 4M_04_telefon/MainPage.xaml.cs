@@ -99,6 +99,7 @@
             {
                 numer = numer.Substring(0, numer.Length - 1);
                 numerLbl.Text = numer;
+
                 SemanticScreenReader.Announce(numerLbl.Text);
             }
         }
